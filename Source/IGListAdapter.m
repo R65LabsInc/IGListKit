@@ -405,7 +405,7 @@
     NSMutableSet *visibleSectionControllers = [NSMutableSet new];
     for (UICollectionViewCell *cell in visibleCells) {
         IGListSectionController *sectionController = [self sectionControllerForView:cell];
-        IGAssert(sectionController != nil, @"Section controller nil for cell %@", cell);
+//        IGAssert(sectionController != nil, @"Section controller nil for cell %@", cell);
         if (sectionController) {
             [visibleSectionControllers addObject:sectionController];
         }
